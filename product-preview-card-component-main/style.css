@@ -89,28 +89,35 @@ p.preco-de {
     padding: 0px 0px;
 }
 
-.add-cart {
+button.add-cart {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 220px;
+    width: 230px;
     margin: 0 auto;
     background-color: hsl(158, 36%, 37%);
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
     color: #fff;
-    padding: 12px;
+    padding: 12px 0px;
+}
+
+button.add-cart:hover {
+ background-color:  hsl(159, 50%, 16%);
 }
 
 .add-cart img {
     width: 15px;
+    margin-right: 8px;
 }
 
 .add-cart p {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     color: #fff;
-    margin-left: 4px;
+    padding: 0;
 }
 
 @media (max-width: 375px) {
@@ -145,8 +152,8 @@ p.preco-de {
         padding: 30px 0;
     }
 
-    .add-cart {
-        width: 80%;
+    button.add-cart {
+        width: 82%;
     }
 
 }
